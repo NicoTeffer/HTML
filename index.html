@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Resume of Tony Alicea</title>
   <link rel="stylesheet" href="styles.css">
 </head>
@@ -11,7 +12,7 @@
 
   <nav>
     <ul>
-      <li><a href="#aboutme">About me</a></li>
+      <li><a href="#about-me">About me</a></li>
       <li><a href="#services">Services</a></li>
       <li><a href="#skills">Skills</a></li>
       <li><a href="#workhistory">Work History</a></li>
@@ -43,21 +44,15 @@
     </section>
 
     <article id="about-me">
-
       <header class="flex-header">
         <h2>About me</h2>
       </header>
-
-      <img src="images/1402261.ico" class="my-picture" />
-
+      <img src="images/1402261.ico" class="my-picture" alt="A picture of Tony!"/>
       <p>Hi! I'm Tony Alicea and I'm <em>happy</em> to have you as a student in my courses.</p>
-
       <aside>
         <p> <small>Don't imitate, understand!</small> </p>
       </aside>
-
       <footer>Contact me</footer>
-
     </article>
 
     <section id="services">
@@ -139,25 +134,19 @@
     </section>
 
     <section id="testimonials">
-
       <h2 class="flex-header">Testimonials</h2>
-
       <blockquote>
         <p>I love Tony's courses!</p>
       </blockquote>
-
       <blockquote>
         <p>
           Tony's courses
-          <strong>helped</strong>
-          me get a job.
+          <strong>helped me get a job.</strong>
         </p>
       </blockquote>
-
-      <blockquote>
+      <blockquote class="featured">
         <p>I love learning about HTML &amp; CSS!</p>
       </blockquote>
-
     </section>
 
     <section id="mailingaddress">
@@ -176,12 +165,10 @@
       <h2>Contact me</h2>
 
       <form action="dosomething.html" method="post">
-        <!--Label Version 1, putting the input inside the label tags-->
         <p class="field">
-          <label class="label-standard">Name</label>
-          <input type="text" name="name" required />
+          <label for="name" class="label-standard">Name</label>
+          <input type="text" id="name" name="name" required />
         </p>
-        <!--Label Version 2, using an "id" to link the label with the input field-->
         <p class="field">
           <label for="email" class="label-standard">Email</label>
           <input type="email" id="email" name="email" required />
