@@ -4,6 +4,32 @@
 
 body {
   font-size: 16px;
+  display: grid;
+  margin-inline: 0;
+  margin-block: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+  margin-block-end: 0;
+}
+
+h2 {
+  margin-block-end: 1.75rem;
+}
+
+h1,
+h2 {
+  font-family: 'Dosis', sans-serif;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #3d3d3d;
+}
+
+input,
+select,
+textarea {
+  font-family: 'Montserrat', sans-serif;
 }
 
 nav {
@@ -28,13 +54,22 @@ nav ul li {
 }
 
 main {
-  max-inline-size: clamp(700px, 50%, 900px);
-  padding-inline: 2rem;
+  FONT-VARIANT: JIS04;
+  font-weight: 200;
   padding-block: 0;
-  border-inline-start: solid 2px black;
-  border-inline-end: solid 2px black;
-  margin-inline: auto;
   margin-block: 0;
+  display: grid;
+  grid-template-columns: 200px 2fr 200px;
+  row-gap: 10px;
+}
+
+main > * {
+  grid-column: 2;
+}
+
+.full-bleed {
+  /* grid-column: 1 / span 3; */
+  padding-inline: 2rem;
 }
 
 .flex-header {
@@ -48,8 +83,43 @@ main {
   flex-wrap: wrap;
 }
 
+#about-me h2 {
+  color: white;
+}
+
 #about-me aside {
   order: 10;
+}
+
+#portfolio {
+  display: grid;
+  grid-template: repeat(2, 1fr) / repeat(5, 1fr);
+  grid-template-areas: "portfolio anchor img1 img2 img3"
+    "portfolio anchor img4 img5 img6";
+  grid-gap: 10px;
+  align-items: end;
+  background-color: rgb(246, 152, 2, 0.9);
+  padding-block: 1rem;
+}
+
+#portfolio h2 {
+  grid-area: portfolio;
+  align-self: start;
+  margin-block: 0;
+}
+
+#portfolio img:hover {
+  opacity: 0.7;
+  transition: opacity 1s;
+}
+
+img.anchor {
+  grid-area: anchor;
+  align-self: start;
+}
+
+#portfolio img {
+  max-inline-size: 100%;
 }
 
 #testimonials {
@@ -103,4 +173,84 @@ blockquote.featured {
 .my-picture {
   max-inline-size: 75px;
   margin-inline-end: 1rem;
+}
+
+#mailing-address {
+  background-image: url(images/unsplash-background.jpg);
+  background-size: cover;
+  color: white;
+  padding-block-end: 1em;
+}
+
+#mailing-address > h2 {
+  color: white;
+}
+
+.button:hover {
+  background-color: rgba(157, 228, 5, 0.9);
+  transition: background-color 2s;
+}
+
+.button-reset:hover {
+  background-color: rgba(255, 42, 0, 0.9);
+  transition: background-color 2s;
+}
+
+.button {
+  background-color: black;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  padding-inline: 1rem;
+  padding-block: .5rem;
+  border-inline: none;
+  border-block: none;
+}
+
+:root {
+  accent-color: rebeccapurple;
+}
+
+.form-control {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  font-weight: lighter;
+  line-height: 1.1;
+  display: grid;
+  grid-template-columns: 1em auto;
+  gap: 0.5em;
+}
+
+.website-icon {
+  max-block-size: 16px;
+  margin-inline-end: .25em;
+}
+
+.phone-icon {
+  max-block-size: 16px;
+  margin-inline-end: .9em;
+  margin-inline-start: .6em;
+}
+
+.twitter-icon {
+  max-block-size: 16px;
+  margin-inline-end: .7em;
+  margin-inline-start: .3em;
+}
+
+.youtube-icon {
+  max-block-size: 16px;
+  margin-inline-end: .4em;
+  margin-inline-start: .06em;
+}
+
+.contact-me {
+  visibility: hidden;
+}
+
+.animate__fadeInUp p {
+  margin-block-end: 2em;
+}
+
+dd {
+  margin-block-end: 10px;
 }
