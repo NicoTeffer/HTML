@@ -72,8 +72,22 @@ main > * {
   padding-inline: 2rem;
 }
 
-.flex-header {
+.flex-header,
+.motto,
+.contact-me,
+#about-me footer {
   flex-basis: 100%;
+}
+
+.introduction {
+  text-align: center;
+  align-self: center;
+}
+
+#about-me footer a,
+#about-me footer a:visited,
+#about-me footer a:hover {
+  color: rebeccapurple;
 }
 
 #about-me {
@@ -81,6 +95,8 @@ main > * {
   color: white;
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
 
 #about-me h2 {
@@ -89,6 +105,11 @@ main > * {
 
 #about-me aside {
   order: 10;
+  text-align: center;
+}
+
+#about-me footer {
+  text-align: center;
 }
 
 #portfolio {
@@ -137,9 +158,13 @@ img.anchor {
   margin-block: 0.5rem;
 }
 
-blockquote.featured {
+#testimonials blockquote.featured {
   order: -1;
   flex: 1 0 auto;
+  background-color: rebeccapurple;
+  color: white;
+  margin-inline-start: 1rem;
+  font-weight: bold;
 }
 
 #testimonials h2 {
@@ -158,12 +183,13 @@ blockquote.featured {
 .resume-fieldset legend {
   padding-inline: 0;
   padding-block: 0;
+  font-size: 0.875rem;
 }
 
 .label-standard {
   display: block;
-  margin-inline: 0.125rem;
   margin-block: 0.125rem;
+  font-size: 0.875rem;
 }
 
 .field {
@@ -171,8 +197,8 @@ blockquote.featured {
 }
 
 .my-picture {
-  max-inline-size: 75px;
-  margin-inline-end: 1rem;
+  max-inline-size: 125px;
+  margin-inline-end: 2.5rem;
 }
 
 #mailing-address {
@@ -241,10 +267,6 @@ blockquote.featured {
   max-block-size: 16px;
   margin-inline-end: .4em;
   margin-inline-start: .06em;
-}
-
-.contact-me {
-  visibility: hidden;
 }
 
 .animate__fadeInUp p {
