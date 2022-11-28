@@ -13,7 +13,7 @@ body {
   display: grid;
   margin-inline: 0;
   margin-block: 0;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 h1 {
@@ -24,15 +24,18 @@ h2 {
   margin-block-end: 1.75rem;
 }
 
-h1, h2 {
-  font-family: 'Dosis', sans-serif;
+h1,
+h2 {
+  font-family: "Dosis", sans-serif;
   font-weight: 300;
   text-transform: uppercase;
   color: #3d3d3d;
 }
 
-input, select, textarea {
-  font-family: 'Montserrat', sans-serif;
+input,
+select,
+textarea {
+  font-family: "Montserrat", sans-serif;
 }
 
 nav {
@@ -51,14 +54,14 @@ nav ul {
 }
 
 nav ul li {
-  margin-inline: .25rem;
+  margin-inline: 0.25rem;
   margin-block: 0;
   line-height: 1.5rem;
   list-style: none;
 }
 
 main {
-  FONT-VARIANT: JIS04;
+  font-variant: JIS04;
   font-weight: 200;
   padding-block: 0;
   margin-block: 0;
@@ -76,7 +79,10 @@ main > * {
   padding-inline: 2rem;
 }
 
-.flex-header, .motto, .contact-me, #about-me footer {
+.flex-header,
+.motto,
+.contact-me,
+#about-me footer {
   flex-basis: 100%;
 }
 
@@ -85,7 +91,9 @@ main > * {
   align-self: center;
 }
 
-#about-me footer a, #about-me footer a:visited, #about-me footer a:hover {
+#about-me footer a,
+#about-me footer a:visited,
+#about-me footer a:hover {
   color: var(--accent-color);
 }
 
@@ -114,8 +122,9 @@ main > * {
 #portfolio {
   display: grid;
   grid-template: repeat(2, 1fr) / repeat(5, 1fr);
-  grid-template-areas:  "portfolio anchor img1 img2 img3"
-                        "portfolio anchor img4 img5 img6";
+  grid-template-areas:
+    "portfolio anchor img1 img2 img3"
+    "portfolio anchor img4 img5 img6";
   grid-gap: 10px;
   align-items: end;
   background-color: rgb(246, 152, 2, 0.9);
@@ -223,15 +232,15 @@ img.anchor {
 .button {
   background-color: black;
   color: white;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   padding-inline: 1rem;
-  padding-block: .5rem;
+  padding-block: 0.5rem;
   border-inline: none;
   border-block: none;
 }
 
 .form-control {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 1rem;
   font-weight: lighter;
   line-height: 1.1;
@@ -242,25 +251,25 @@ img.anchor {
 
 .website-icon {
   max-block-size: 16px;
-  margin-inline-end: .25em;
+  margin-inline-end: 0.25em;
 }
 
 .phone-icon {
   max-block-size: 16px;
-  margin-inline-end: .9em;
-  margin-inline-start: .6em;
+  margin-inline-end: 0.9em;
+  margin-inline-start: 0.6em;
 }
 
 .twitter-icon {
   max-block-size: 16px;
-  margin-inline-end: .7em;
-  margin-inline-start: .3em;
+  margin-inline-end: 0.7em;
+  margin-inline-start: 0.3em;
 }
 
 .youtube-icon {
   max-block-size: 16px;
-  margin-inline-end: .4em;
-  margin-inline-start: .06em;
+  margin-inline-end: 0.4em;
+  margin-inline-start: 0.06em;
 }
 
 .animate__fadeInUp p {
@@ -288,8 +297,9 @@ dd {
 
   #portfolio {
     grid-template: 1fr / 1fr 1fr;
-    grid-template-areas:  "portfolio portfolio"
-                          "anchor img1";
+    grid-template-areas:
+      "portfolio portfolio"
+      "anchor img1";
   }
 }
 
