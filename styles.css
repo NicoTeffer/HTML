@@ -310,7 +310,7 @@ dd {
     padding-inline: 15%;
   }
 }
-
+/* Media Queries for print-media */
 @media print {
   #about-me {
     background-color: white;
