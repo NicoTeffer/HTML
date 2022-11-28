@@ -44,6 +44,7 @@ nav ul {
   display: flex;
   flex-wrap: wrap;
   padding-inline: 0;
+  justify-content: center;
 }
 
 nav ul li {
@@ -198,7 +199,7 @@ img.anchor {
 
 .my-picture {
   max-inline-size: 125px;
-  margin-inline-end: 2.5rem;
+  /*margin-inline-end: 2.5rem;*/
 }
 
 #mailing-address {
@@ -275,4 +276,37 @@ img.anchor {
 
 dd {
   margin-block-end: 10px;
+}
+
+/* declares if media type= screen or print i.e. use these rules */
+@media screen and (max-width: 767.98px) {
+  main {
+    grid-template-columns: 25px 1fr 25px;
+  }
+
+  #about-me {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .my-picture {
+    margin-inline-end: 0;
+  }
+
+  #portfolio {
+    grid-template: 1fr / 1fr 1fr;
+    grid-template-areas: "portfolio portfolio"
+      "anchor img1";
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  main {
+    grid-template-columns: 1fr 900px 1fr;
+  }
+
+  .full-bleed {
+    padding-inline: 15%;
+  }
+
 }
